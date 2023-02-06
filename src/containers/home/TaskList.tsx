@@ -68,13 +68,13 @@ const TaskList: React.FC<{ setTp: React.Dispatch<number> }> = props => {
                 img={HealthCheckImg}
                 imgPlaceholder={HealthCheckBlackImg}
                 intlPrefix="task.env"
-                isBadgeFirst={true}
             />
             <Task
                 completed={validated?.secret}
                 img={SecretImg}
                 imgPlaceholder={SecretBlackImg}
                 intlPrefix="task.secret"
+                isBadgeFirst={true}
             />
             <Task
                 completed={validated?.timedDeploy}
