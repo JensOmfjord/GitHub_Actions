@@ -96,30 +96,30 @@ const TaskList: React.FC<{ setTp: React.Dispatch<number> }> = props => {
                 intlPrefix="task.docker3"
             />
             <Task
+                completed={validated?.conditional}
+                img={ConditionalImg}
+                imgPlaceholder={ConditionalBlackImg}
+                intlPrefix="task.conditional"
+                isBadgeFirst={true}
+            />
+            <Task
                 completed={validated?.mail}
                 img={MailImg}
                 imgPlaceholder={MailBlackImg}
                 intlPrefix="task.mail"
-                isBadgeFirst={true}
             />
             <Task
                 completed={validated?.stats}
                 img={StatsImg}
                 imgPlaceholder={StatsBlackImg}
                 intlPrefix="task.status"
+                isBadgeFirst={true}
             />
             <Task
                 completed={validated?.timedDeploy}
                 img={ClockImg}
                 imgPlaceholder={ClockBlackImg}
                 intlPrefix="task.clock"
-                isBadgeFirst={true}
-            />
-            <Task
-                completed={validated?.conditional}
-                img={ConditionalImg}
-                imgPlaceholder={ConditionalBlackImg}
-                intlPrefix="task.conditional"
             />
             <Task
                 completed={validated?.hacker}
