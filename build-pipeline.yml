@@ -34,6 +34,11 @@ jobs:
         run: npm run lint:ts
       - name: Run styles lint and format check
         run: npm run lint:css
+      - name: "Hello world when it's Monday"
+        run: echo "Hello $FIRST_NAME $LAST_NAME, today is Monday!"
+        env:
+          FIRST_NAME: Jens
+          LAST_NAME: Omfjord
   deploy:
     needs: [build, test]
     runs-on: ubuntu-latest
