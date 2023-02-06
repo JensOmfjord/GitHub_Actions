@@ -40,13 +40,11 @@ export const validateCDCI = async (): Promise<IValidator> => {
             validateText(buildText, 'run: npm run lint:css'),
         secret: validateText(buildText, 'secrets.PASSWORD'),
         test: validateText(buildText, 'run: npm run test'),
-        timedDeploy:
-            validateText(buildText, 'npm'),
+        timedDeploy: validateText(buildText, 'npm'),
         docker1: validateText(buildText, 'npm'),
         docker2: validateText(buildText, 'npm'),
         docker3: validateText(buildText, 'npm'),
-        hacker:
-            validateText(buildText, 'npm'),
+        hacker: validateText(buildText, 'npm'),
         conditional: validateText(buildText, 'npm'),
         mail: validateText(buildText, 'npm'),
         stats: validateText(buildText, 'npm')
